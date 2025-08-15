@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))',
+					muted: 'hsl(var(--primary-muted))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,15 +54,38 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				/* Legal Contract Review Custom Colors */
+				document: {
+					DEFAULT: 'hsl(var(--document-bg))',
+					border: 'hsl(var(--document-border))',
+					highlight: 'hsl(var(--document-highlight))',
+					'change-add': 'hsl(var(--document-change-add))',
+					'change-remove': 'hsl(var(--document-change-remove))'
+				},
+				panel: {
+					DEFAULT: 'hsl(var(--panel-bg))',
+					border: 'hsl(var(--panel-border))',
+					header: 'hsl(var(--panel-header))'
+				},
+				quality: {
+					excellent: 'hsl(var(--quality-excellent))',
+					good: 'hsl(var(--quality-good))',
+					warning: 'hsl(var(--quality-warning))',
+					critical: 'hsl(var(--quality-critical))'
+				},
+				hover: 'hsl(var(--hover))',
+				active: 'hsl(var(--active))',
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
+				info: {
+					DEFAULT: 'hsl(var(--info))',
+					foreground: 'hsl(var(--info-foreground))'
 				}
 			},
 			borderRadius: {
