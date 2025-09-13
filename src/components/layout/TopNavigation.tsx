@@ -14,11 +14,11 @@ import {
 
 const TopNavigation = () => {
   const navItems = [
-    { label: "Documents", icon: FileText, active: true },
-    { label: "Library", icon: Library },
-    { label: "Policies", icon: Shield },
-    { label: "Reports", icon: BarChart3 },
-    { label: "Settings", icon: Settings },
+    { label: "Documents", icon: FileText, active: true, href: "/" },
+    { label: "Library", icon: Library, href: "#" },
+    { label: "Deep Scan", icon: Shield, href: "/deep-scan" },
+    { label: "Reports", icon: BarChart3, href: "#" },
+    { label: "Settings", icon: Settings, href: "#" },
   ];
 
   return (
@@ -39,9 +39,12 @@ const TopNavigation = () => {
               variant={item.active ? "default" : "ghost"}
               size="sm"
               className="flex items-center space-x-2"
+              asChild
             >
-              <item.icon className="w-4 h-4" />
-              <span>{item.label}</span>
+              <a href={item.href}>
+                <item.icon className="w-4 h-4" />
+                <span>{item.label}</span>
+              </a>
             </Button>
           ))}
         </nav>
